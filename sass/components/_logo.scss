@@ -1,0 +1,47 @@
+
+.header__logo {
+    color: $logo-color;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 88px;
+
+    padding-top: 16px;
+
+    &-part {
+        color: $accent-color;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 26px;
+    }
+
+   @media (min-width: 1200px) {
+    margin-right: 93px;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;}
+}
+
+.footer__logo {
+    color: $primary-white-title-color;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    @extend %flex_center;
+    margin-bottom: 20px;
+
+    &-part {
+        color: $accent-color;
+    }
+
+    @media (min-width: 1200px) {
+        display: inline-block;
+    }
+}
+
+

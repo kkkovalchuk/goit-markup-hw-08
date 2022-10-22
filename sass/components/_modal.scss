@@ -1,0 +1,196 @@
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.modal {
+    // width: 528px;
+    // height: 581px;
+    padding: 40px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: calc(100% - 30px);
+    max-height: 609px;
+
+
+    transform: translate(-50%, -50%);
+    background-color: $primary-white-title-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $title-text-color;
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+    }
+}
+
+
+.modal__close {
+    fill: $logo-color;
+
+    &-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: $primary-white-title-color;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            border-color: $accent-color;
+        }
+    }
+}
+
+
+.modal__form {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal__form-element {
+    display: flex;
+    flex-direction: column;
+
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+
+    
+}
+
+.modal__form-element-label {
+    margin-bottom: 4px;
+}
+
+.modal__form-element-input {
+    margin-bottom: 10px;
+    padding-left: 42px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal__form-element:focus-within &, 
+    .modal__form-element:hover & {
+        border: 1px solid $accent-color;
+    } 
+}
+
+
+.modal__form-element-comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    resize: none;
+    outline: none;
+
+    padding: 12px 16px;
+    margin-bottom: 25px;
+
+    .modal__form-element:focus-within &, 
+    .modal__form-element:hover & {
+    border: 1px solid $accent-color;
+    }
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        
+        color: rgba(117, 117, 117, 0.5);
+    
+    }
+}
+
+
+.modal__form-element-icon {
+    position: relative;
+}
+
+.modal__form-icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .modal__form-element:focus-within &, 
+    .modal__form-element:hover & {
+    fill: $accent-color;
+    }
+}
+
+.modal__form-btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal__form-btn {
+    border: none;
+    
+    width: 200px;
+    height: 50px;
+    
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $primary-white-title-color;
+
+    cursor: pointer;
+    margin: 30px auto 0 auto;
+
+    &:hover {
+        background: $background-btn;
+    }
+
+}

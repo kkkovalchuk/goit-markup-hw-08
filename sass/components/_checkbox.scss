@@ -1,0 +1,43 @@
+
+.modal__accept {
+    align-items: center;
+
+    @extend %flex_center;
+}
+
+.modal__checkbox-icon {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+    color: $primary-text-color;
+    margin-left: 7px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+}
+
+.modal__form-link {
+    color: $accent-color;
+    text-decoration: underline;
+}
+
+
+.modal__check-icon {
+    height: 15px;
+    width: 16px;
+
+    border: 2px solid $title-text-color;
+    border-radius: 3px;
+
+    display: inline-flex;
+    align-items: center;
+
+    .modal__input-icon:checked + & {
+        background-color: $accent-color;
+        border-color: $accent-color;
+    }
+}
+
+
+

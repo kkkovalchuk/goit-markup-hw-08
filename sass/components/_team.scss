@@ -1,0 +1,122 @@
+
+.team {
+    background-color: $background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    
+    
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+
+    &__item {
+        background-color: $primary-white-title-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        max-width: 450px;
+        padding-bottom: 24px;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px)/2);
+            }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 3 * 30px) / 4);
+            }
+        
+        // padding-bottom: 30px;
+    }
+
+    .team__title-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__img {
+        margin-bottom: 30px;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        // margin-bottom: 50px;
+        color: $title-text-color;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        color: $title-text-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        color: $primary-text-color;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 16px;
+    }
+
+    &__title-list {
+        @extend %lists;
+    }
+
+    &__social-list {
+        @extend %flex_center;
+        gap: 10px;
+        
+    }
+    
+ 
+    
+    
+    &__social-link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        @extend %flex_center;
+        color: $icon-color;
+        background-color: $primary-white-title-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            color: $primary-white-title-color;
+            background-color: $accent-color;
+        }
+    }
+
+    &__social-icon {
+        fill: currentColor;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+

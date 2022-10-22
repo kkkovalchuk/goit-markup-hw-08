@@ -1,0 +1,19 @@
+%lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+%flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+%footer_connect {
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}

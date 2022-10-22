@@ -1,0 +1,63 @@
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__card-link {
+        
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: $background-color;
+        border-radius: 4px;
+        @extend %flex_center;
+
+        // margin-bottom: 30px;
+    }
+
+
+    &__item {
+
+        max-width: 450px;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px)/2);  
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 3 * 30px) / 4);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+
+    &__title {
+        color: $title-text-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        margin-bottom: 10px;
+        @extend %flex_center;
+    }
+
+    &__text {
+        color: $primary-text-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$accent-color: #2196F3;
+$primary-white-color: #F5F5F5;
+$logo-color: #000000;
+$primary-white-title-color: #FFFFFF;
+$primary-dark-color: #2F303A;
+$background-color: #F5F4FA;
+$background-btn: #188CE8;
+$border-color: #EEEEEE;
+$header-border-color: #ECECEC;
+$icon-color: #AFB1B8;
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    color: $title-text-color;
+    background-color: $primary-white-title-color;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0;
+}
+
+ul {
+padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
