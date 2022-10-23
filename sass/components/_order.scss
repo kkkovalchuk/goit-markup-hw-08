@@ -1,5 +1,5 @@
 .order {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/img-bckgrd-mob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd-mob.jpg);
     display: block;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/img-bckgrd-mob@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd-mob@2x.jpg);
         }
 
     &__title {
@@ -60,14 +60,14 @@
     .order {
     padding: 118px 204px;
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/img-bckgrd-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd-tab.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .order {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/img-bckgrd-tab@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd-tab@2x.jpg);
         }
     }
 }
@@ -79,7 +79,7 @@
         max-width: 1600px;
         height: 600px;
         
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/img-bckgrd.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd.jpg);
     }
     .order__title {
         font-size: 44px;
@@ -91,7 +91,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .order {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/img-bckgrd@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd@2x.jpg);
         }
     }
 }
