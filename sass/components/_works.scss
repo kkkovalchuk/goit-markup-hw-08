@@ -1,6 +1,9 @@
 .works {
+    @media (max-width: 1199px) {
+        display: none;
+    }
 
-    display: none;
+    
 
 
     padding-top: 47px;

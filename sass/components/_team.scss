@@ -4,10 +4,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
     
+    @media (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
     
-    
-    // padding-top: 94px;
-    // padding-bottom: 94px;
 
     &__item {
         background-color: $primary-white-title-color;
@@ -30,6 +31,7 @@
     .team__title-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
 
