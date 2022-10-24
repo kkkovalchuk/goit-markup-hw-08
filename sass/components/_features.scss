@@ -1,5 +1,4 @@
 .features {
-
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -9,14 +8,13 @@
     }
 
     &__card-link {
-        
+
         height: 120px;
         margin-bottom: 30px;
         background-color: $background-color;
         border-radius: 4px;
         @extend %flex_center;
-
-        // margin-bottom: 30px;
+        
     }
 
 

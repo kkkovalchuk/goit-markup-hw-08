@@ -1,5 +1,5 @@
-.order {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd-mob.jpg);
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-back-mob.jpg);
     display: block;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd-mob@2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-back-mob-2x.jpg);
         }
 
     &__title {
@@ -57,17 +57,17 @@
 
 
 @media (min-width: 768px) {
-    .order {
+    .hero {
     padding: 118px 204px;
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-back-tab.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        .order {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd-tab@2x.jpg);
+        .hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-back-tab-2x.jpg);
         }
     }
 }
@@ -75,13 +75,13 @@
 
 
 @media (min-width: 1200px) {
-    .order {
+    .hero {
         max-width: 1600px;
         height: 600px;
         
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-back-desk.jpg);
     }
-    .order__title {
+    .hero__title {
         font-size: 44px;
         line-height: 1.36;
         max-width: 696px;
@@ -90,8 +90,8 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .order {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-bckgrd@2x.jpg);
+        .hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/img-back-desk-2x.jpg);
         }
     }
 }
