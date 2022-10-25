@@ -46,7 +46,9 @@
         &:hover, &:focus {
             color: $accent-color;
         }
+    }
 
+    &__contacts {
         @media (max-width: 1200px) {
         margin-bottom: 60px;
         }

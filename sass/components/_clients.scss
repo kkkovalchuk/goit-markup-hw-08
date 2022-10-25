@@ -33,6 +33,14 @@
         &:hover, &:focus {
             border-color: $accent-color;
         }
+
+        @media (min-width: 768px) {
+            width: 226px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 170px;
+        }
     }
 
     &__logo {
